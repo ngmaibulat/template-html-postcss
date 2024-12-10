@@ -10,6 +10,14 @@ bun install
 bun run dev
 ```
 
+### Watch
+
+```bash
+bun run js:watch
+bun run html:watch
+bun run css:watch
+```
+
 ### Build
 
 ```bash
