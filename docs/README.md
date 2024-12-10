@@ -7,12 +7,15 @@ bun install
 ### Dev
 
 ```bash
-bun run css:watch
-cd src; python -m http.server
+bun run dev
 ```
 
 ### Build
 
 ```bash
-bun run css:build
+bun run build
 ```
+
+### Todo
+
+- include watcher script into `bun run dev`
