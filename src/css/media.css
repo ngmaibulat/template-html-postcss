@@ -1,0 +1,5 @@
+@custom-media --small-screen screen and (width <= 600px);
+@custom-media --medium-screen screen and (601px <= width <= 900px);
+@custom-media --large-screen screen and (width > 900px);
+@custom-media --dark-mode (prefers-color-scheme: dark);
+@custom-media --light-mode (prefers-color-scheme: light);

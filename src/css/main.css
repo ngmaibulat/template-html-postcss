@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding-left: 3rem;
+}
+
+main {
+  flex-grow: 1;
+  padding: 5rem;
+}
+
+footer {
+  padding: 1rem;
+  color: yellow;
+  text-align: center;
+  background-color: #333;
+}

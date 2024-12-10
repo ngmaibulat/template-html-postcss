@@ -1,0 +1,5 @@
+@media (--medium-screen) {
+  body {
+    background-color: blue;
+  }
+}
