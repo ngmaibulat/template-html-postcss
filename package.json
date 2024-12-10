@@ -3,7 +3,6 @@
   "module": "index.html",
   "type": "module",
   "scripts": {
-    "dev": "lite-server",
     "css:build": "postcss src/index.css -o dist/main.css",
     "css:watch": "postcss src/index.css -o dist/main.css --watch",
     "css:lint": "stylelint src/css/**/*.css",
@@ -12,9 +11,11 @@
     "html:watch": "pug src/index.pug -o dist --pretty --watch",
     "bun:build": "bun build src/script.ts --outdir dist",
     "js:build": "tsc src/*.ts --outDir dist --target es2020 --module nodenext",
-    "js:watch": "tsc src/*.ts --outDir dist --target es2020 --module nodenext --watch",
+    "js:watch": "tsc src/*.ts --outDir dist --target es2020 --module nodenext --watch --preserveWatchOutput",
     "js:lint": "biome check",
-    "build": "npm run css:build && npm run html:build && npm run js:build"
+    "build": "npm run css:build && npm run html:build && npm run js:build",
+    "watch": "bun run html:watch & bun run css:watch & bun run js:watch",
+    "dev": "lite-server & bun run watch"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
