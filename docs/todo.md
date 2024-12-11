@@ -16,14 +16,6 @@
 - Position
 - Basic CSS Courses
 
-### Bottom Toolbar
-
-```css
-position: fixed;
-bottom: 0;
-left: 0;
-```
-
 ### Other Templates
 
 - SASS

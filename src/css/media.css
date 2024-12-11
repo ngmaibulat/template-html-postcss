@@ -1,3 +1,4 @@
+@custom-media --mobile screen and (width <= 400px);
 @custom-media --small-screen screen and (width <= 600px);
 @custom-media --medium-screen screen and (601px <= width <= 900px);
 @custom-media --large-screen screen and (width > 900px);
